@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Youth IDJO</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <style>
+        div.gallery {
+            margin: 4px;
+            margin-bottom: 48px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 400px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .carousel-container {
+            max-width: 650px;
+            flex: 1;
+        }
+
+        .carousel-text {
+            margin-left: 20px;
+            flex: 1;
+            padding: 15px;
+        }
+
+        .map-container {
+            margin-top: 40px;
+        }
+
+        p {
+            margin-top: -15px;
+            font-size: 22px;
+        }
+    </style>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="fw-bolder text-primary">
+                            <p style="color: black; margin-top: 5%; margin-bottom: 4%; font-size: 25px; margin-left: -15%;">Youth IDJO</p>
+                        </span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html" style="color: black; font-size: 20px; margin-right: 20px;">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" aria-expanded="false" style="color: black; font-size: 20px; margin-right: 20px;">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                    <li><a class="dropdown-item" href="founders.html">Founders</a></li>
+                                    <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="temple.html" style="color: black; font-size: 20px; margin-right: 20px;">Temple</a></li>
+                            <li class="nav-item"><a class="nav-link" href="events.html" style="color: black; font-size: 20px; margin-right: 20px;">Events</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pictures.html" style="color: black; font-size: 20px; margin-right: 20px;">Pictures</a></li>
+                            <li class="nav-item"><a class="nav-link" href="bylaws.html" style="color: black; font-size: 20px; margin-right: 20px;">Bylaws</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html" style="color: black; font-size: 20px; margin-right: 20px;">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <br>
+                    <h1 class="display-5 fw-bolder mb-0">
+                        <span class="text-gradient d-inline">Shri Digamber Jain Temple of Virginia</span>
+                    </h1>
+                </div>
+                
+                <!-- Carousel and Text Side-by-Side -->
+                <div class="d-flex">
+                    <!-- Image Slider Gallery -->
+                    <div class="carousel-container">
+                        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/pictures/temple4.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/pictures/temple3.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/pictures/temple1.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/pictures/temple2.jpg">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Text next to the carousel -->
+                    <div class="carousel-text">
+                        <p>
+                            Situated in Northern Virginia, this temple is the world's first dedicated to the Digamber Jain faith that features the three tirthankaras Parshvanath, Chandraprabhu, and Shantinath Bhagwan, carved out of semi-precious stones. Covering an area of 9,000 square feet, the temple includes a Garbh Gruha (shrine), a decorated prayer room, a religious library, and additional facilities.
+                        </p>
+                        <p>
+                            Thanks to the efforts of the Youth International Digambar Jain Organization and its partner, IDJO, the temple has emerged as a significant cultural and spiritual hub for the Jain community in Northern Virginia. It acts as a center for religious activities, community events, and educational programs, promoting the teachings of Jainism across all age groups.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11933.012758030503!2d-77.46955662438965!3d38.91200725205529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64718c8f4c9f7%3A0x41194f0ab1daa732!2sShri%20Digamber%20Jain%20Temple%20of%20Virginia%20IDJO!5e1!3m2!1sen!2sus!4v1729467911664!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>        
+        </main>
+
+        <footer class="bg-white py-custom mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0" style="font-size: 17px;">Developed and Maintained by Soham Jain</div>
+                    </div>            
+                    <div class="col-auto">
+                        <div style="display: flex; align-items: center;">
+                            <a class="text-gradient" href="https://github.com/sjain2025/YouthIDJO" target="_blank"><i class="bi bi-github" style="font-size: 32px;"></i></a>
+                        </div>                        
+                    </div>                      
+                </div>
+            </div>
+        </footer> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,4 +1,4 @@
-## Youth IDJO
+## Youth International Digambar Jain Organization (YIDJO)
 
 ### Co-Founders: Soham Jain, Ahana Jain, Krish Jain
 
